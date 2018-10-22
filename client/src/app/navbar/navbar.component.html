@@ -1,0 +1,7 @@
+<ul class="navbar navbar-dark bg-dark">
+  <li *ngIf="!auth.isLoggedIn()">Weather Forecast App</li>
+  <li *ngIf="auth.isLoggedIn()"><a routerLink="/home">Welcome {{ auth.getUserDetails()?.name.charAt(0).toUpperCase() + auth.getUserDetails()?.name.slice(1)
+      }}
+    </a></li>
+  <li *ngIf="auth.isLoggedIn()"><a (click)="auth.logout()">Logout</a></li>
+</ul>
