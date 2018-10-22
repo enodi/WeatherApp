@@ -1,0 +1,30 @@
+<div class="wrapper">
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12">
+        <div *ngIf="!errorMessage; else displayMessage">
+          <a href="/home" class="btn">Home</a>
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title"><i class="icon-cloud"></i></h2>
+              <h3 class="card-text">{{data.weatherData.data.main.temp}}<sup>o</sup></h3>
+              <h4 class="card-text">{{data.weatherData.data.weather[0].main}}</h4>
+              <p class="card-link left">Humidity: {{data.weatherData.data.main.humidity}}%</p>
+              <p class="card-link right">Wind Speed: {{data.weatherData.data.wind.speed}}mph</p>
+            </div>
+          </div>
+          <p id="location">Location | {{data.weatherData.data.name}}, {{data.weatherData.data.sys.country}}</p>
+        </div>
+        <ng-template #displayMessage>
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title"><i class="icon-exclamation-sign"></i></h2>
+              <h3>Whoa!! {{errorMessage}}</h3>
+              <a href="/home" class="btn">Try again</a>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
