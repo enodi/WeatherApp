@@ -10,7 +10,7 @@ export class RestService {
   constructor(private http: HttpClient, private auth: AuthenticationService) { }
 
   getForecast(location: string) {
-    return this.http.get(`http://localhost:8080/api/v1/search-location?location=${location}`, { headers: { "x-access-token": `${this.auth.getToken()}` } })
+    return this.http.get(`https://weather-app-angular-node.herokuapp.com/api/v1/search-location?location=${location}`, { headers: { "x-access-token": `${this.auth.getToken()}` } })
       .toPromise()
   }
 }
