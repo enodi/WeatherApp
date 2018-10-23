@@ -71,7 +71,7 @@ export class AuthenticationService {
     let base;
 
     if (method === "post") {
-      base = this.http.post(`http://localhost:8080/api/v1/${type}`, user);
+      base = this.http.post(`https://weather-app-angular-node.herokuapp.com/api/v1/${type}`, user);
     }
 
     const request = base.pipe(
