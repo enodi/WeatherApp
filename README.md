@@ -14,7 +14,7 @@ You can view the deployed application [here](https://weather-forecast-app-angula
 
 ### Installation and Setup
 
-* Navigate to a directory with your terminal
+* Navigate to a directory within your terminal
 * Clone this repo to your directory
 * Using HTTP; ```$ git clone https://github.com/enodi/WeatherApp.git```
 * Using SSH; ```$ git clone git@github.com/enodi/WeatherApp.git```
