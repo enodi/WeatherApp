@@ -14,10 +14,10 @@ import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { RestService } from './rest.service';
-import { WeatherResolverService } from './weather-resolver.service';
-import { AuthenticationService } from './authentication.service';
-import { AuthorizationService } from './authorization.service';
+import { RestService } from './services/rest.service';
+import { WeatherResolverService } from './services/weather-resolver.service';
+import { AuthenticationService } from './services/authentication.service';
+import { AuthorizationService } from './services/authorization.service';
 
 const appRoutes: Routes = [
   {

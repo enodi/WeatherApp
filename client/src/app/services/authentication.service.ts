@@ -3,26 +3,27 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { TokenResponse, UserDetails, TokenPayload, Token } from '../interfaces/interfaces';
 
-interface TokenResponse {
-  token: string;
-}
+// interface TokenResponse {
+//   token: string;
+// }
 
-export interface UserDetails {
-  _id: string;
-  name: string;
-  exp: number;
-}
+// export interface UserDetails {
+//   _id: string;
+//   name: string;
+//   exp: number;
+// }
 
-export interface Token {
-  token: string;
-}
+// export interface Token {
+//   token: string;
+// }
 
-export interface TokenPayload {
-  name?: string;
-  email: string;
-  password: string;
-}
+// export interface TokenPayload {
+//   name?: string;
+//   email: string;
+//   password: string;
+// }
 
 @Injectable({
   providedIn: 'root'

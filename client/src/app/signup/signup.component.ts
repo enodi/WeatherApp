@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 
-import { AuthenticationService, TokenPayload } from '../authentication.service';
+import { AuthenticationService } from '../services/authentication.service';
+import { TokenPayload } from '../interfaces/interfaces';
 
 @Component({
   selector: 'app-signup',

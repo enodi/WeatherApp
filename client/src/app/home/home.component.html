@@ -1,11 +1,4 @@
 <div class="content">
   <app-navbar></app-navbar>
-  <div class="wrapper">
-    <h1>Weather Forecast <i class="icon-bolt"></i></h1>
-    <p>Enter a City below to get the current weather conditions for that area</p>
-    <form (submit)="onSubmit()" #locationForm="ngForm" class="form-container">
-      <input type="text" name="location" [(ngModel)]="location" class="form-control">
-      <button type="submit">Search</button>
-    </form>
-  </div>
+  <div #gmap id="map"></div>
 </div>
